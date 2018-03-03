@@ -2,9 +2,9 @@
   "name": "scroll-it",
   "version": "0.0.1",
   "description": "scroll it",
-  "main": "dist/vue-trend.common.js",
-  "module": "dist/vue-trend.esm.js",
-  "unpkg": "dist/vue-trend.js",
+  "main": "dist/scroll-it.common.js",
+  "module": "dist/scroll-it.esm.js",
+  "unpkg": "dist/scroll-it.js",
   "files": [
     "dist"
   ],
