@@ -1,5 +1,5 @@
 {
-  "name": "scroll-it",
+  "name": "@limichange/scroll-it",
   "version": "0.0.1",
   "description": "scroll it",
   "main": "dist/scroll-it.common.js",
