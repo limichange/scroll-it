@@ -1,0 +1,33 @@
+{
+  "name": "scroll-it",
+  "version": "0.0.1",
+  "description": "scroll it",
+  "main": "dist/vue-trend.common.js",
+  "module": "dist/vue-trend.esm.js",
+  "unpkg": "dist/vue-trend.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "parcel example/index.html",
+    "build": "rollup -c --environment BUILD"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limichange/scroll-it.git"
+  },
+  "keywords": [],
+  "author": "limichange<limichange@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limichange/scroll-it/issues"
+  },
+  "homepage": "https://github.com/limichange/scroll-it#readme",
+  "devDependencies": {
+    "less": "^3.0.1",
+    "parcel-bundler": "^1.6.2",
+    "rollup": "^0.56.3",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
