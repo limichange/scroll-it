@@ -3,6 +3,7 @@ import uglify from 'rollup-plugin-uglify'
 
 export default function createConfig ({
   input = 'src/index.js',
+  distDir = 'dist',
   author,
   name,
   version
@@ -26,7 +27,7 @@ export default function createConfig ({
     ],
     output: [
       {
-        file: `dist/${name}.min.js`,
+        file: `${distDir}/${name}.min.js`,
         format: 'umd',
         name,
         banner
@@ -39,18 +40,18 @@ export default function createConfig ({
     ],
     output: [
       {
-        file: `dist/${name}.js`,
+        file: `${distDir}/${name}.js`,
         format: 'umd',
         name,
         banner
       },
       {
-        file: `dist/${name}.common.js`,
+        file: `${distDir}/${name}.common.js`,
         format: 'cjs',
         banner
       },
       {
-        file: `dist/${name}.esm.js`,
+        file: `${distDir}/${name}.esm.js`,
         format: 'es',
         banner
       }
