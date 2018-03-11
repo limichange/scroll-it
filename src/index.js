@@ -1,4 +1,13 @@
-export default function smoothScroll(scroller, to, mode = 'h', callback = () => {}) {
+export default function smoothScroll({
+  scroller,
+  to = 0,
+  mode = 'h',
+  callback = () => {}
+} = {}) {
+  if (!scroller) {
+    throw new Error('option scroller is required')
+  }
+
   const scorllType = mode === 'h' ? 'scrollLeft' : 'scrollTop'
   let from = scroller[scorllType]
 
