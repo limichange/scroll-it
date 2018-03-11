@@ -9,9 +9,16 @@
 	(global['scroll-it'] = factory());
 }(this, (function () { 'use strict';
 
-function smoothScroll(scroller, to, mode, callback) {
-  if ( mode === void 0 ) mode = 'h';
-  if ( callback === void 0 ) callback = function () {};
+function smoothScroll(ref) {
+  if ( ref === void 0 ) ref = {};
+  var scroller = ref.scroller;
+  var to = ref.to; if ( to === void 0 ) to = 0;
+  var mode = ref.mode; if ( mode === void 0 ) mode = 'h';
+  var callback = ref.callback; if ( callback === void 0 ) callback = function () {};
+
+  if (!scroller) {
+    throw new Error('option scroller is required')
+  }
 
   var scorllType = mode === 'h' ? 'scrollLeft' : 'scrollTop';
   var from = scroller[scorllType];
