@@ -6,10 +6,11 @@
   "module": "dist/scroll-it.esm.js",
   "unpkg": "dist/scroll-it.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "dev": "parcel example/index.html",
+    "dev": "parcel example/index.html -d build",
     "build": "rollup -c --environment BUILD"
   },
   "repository": {
@@ -17,7 +18,7 @@
     "url": "git+https://github.com/limichange/scroll-it.git"
   },
   "keywords": [],
-  "author": "limichange<limichange@hotmail.com>",
+  "author": "limichange",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/limichange/scroll-it/issues"
