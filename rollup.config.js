@@ -1,4 +1,4 @@
-import createConfig from '@limichange/create-rollup-lib-config'
+import createConfig from 'create-rollup-lib-config'
 
 export default createConfig({
   name: 'scroll-it',

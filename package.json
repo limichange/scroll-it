@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/limichange/scroll-it#readme",
   "devDependencies": {
-    "create-rollup-lib-config": "^0.0.2",
+    "create-rollup-lib-config": "0.0.7",
     "less": "^3.0.1",
     "parcel-bundler": "^1.6.2",
     "rollup": "^0.56.3",
